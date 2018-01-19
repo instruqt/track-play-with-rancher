@@ -1,0 +1,4 @@
+#!/bin/bash
+
+fail-message "This is a sandbox, so the check button doesn't work. If you want to go back to the track overview, click on the button below."
+fail-message "This is a sandbox, so the check button doesn't work. If you want to go back to the track overview, click on the button below."

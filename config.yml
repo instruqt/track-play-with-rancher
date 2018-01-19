@@ -1,0 +1,19 @@
+template: containers
+configuration:
+  Containers:
+  - Image: rancher/server
+    Name: rancher
+    Ports:
+    - Name: rancher
+      Port: 8080
+    Privileged: false
+    Resources:
+      Memory: 1024
+  - Image: docker:dind
+    Name: agent
+    Ports:
+    - Name: rancher-agent
+      Port: 8080
+    Privileged: true
+    Resources:
+      Memory: 256

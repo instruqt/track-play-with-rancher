@@ -1,0 +1,49 @@
+type: sandbox
+slug: play-with-rancher
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/rancher.png
+title: Play with Rancher
+teaser: Deploy your applications using Docker and Rancher
+description: |-
+  Running containers in production requires a wide variety of technologies, which must be integrated and managed throughout their lifecycle. A powerful tool like Kubernetes requires a lot of expertise to install and manage.
+
+  Rancher is a complete container management platform that makes managing and using containers in production really easy.
+ 
+  Get started with Rancher! Connect a Docker host and start deploying your own applications.
+tags:
+- rancher
+challenges:
+- slug: sandbox
+  credits: 10
+  title: Sandbox
+  teaser: Play around with a Rancher server and a Docker host
+  notes:
+  - type: text
+    title: Creating infrastructure
+    contents: |-
+      We are creating a Rancher server and a Docker host, that you can connect
+      to the Rancher server. This may take a while...
+  assignment: |-
+    To start, connect the agent to the Rancher server. Follow these steps:
+
+    - On the Rancher server webinterface, click **Add a host**
+    - Change the server address to **http://rancher:8080**
+    - Follow the rest of the wizard, and you should have an agent connected
+
+    Now try to deploy a **stack** on this host. Good luck!
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+  - type: service
+    title: Rancher Server
+    hostname: rancher
+    port: 8080
+  - type: terminal
+    title: Rancher Agent
+    hostname: agent
+developers:
+- bas@instruqt.com
+- erik@instruqt.com
+- niels@instruqt.com
+published: true
